@@ -1,0 +1,78 @@
+.icon-title {
+    max-width: 112px;
+}
+
+.services {
+    padding: 30px;
+    background-image: url('../../images/banner-services.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.services__inner {
+    max-width: 970px;
+    margin: 0 auto;
+    min-height: 425px;
+}
+
+.service__list {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+}
+.service__item {
+    padding: 0 15px;
+}
+
+.service__item .img {
+    border-radius: 4px;
+    transition: all .3s;
+}
+.service__item:hover .img {
+    transform: scale(1.1);
+}
+.service__item:hover  a {
+    text-decoration: none;
+}
+.service__item p {
+    font-size: 22px;
+    color: var(--white1);
+    margin-top: 12px;
+    transition: all .3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service__item:hover p {
+    color: var(--yellow1)
+}
+.button1{
+    color:var(--white1);
+    width: 180px;
+    height: 40px;
+    background: var(--yellow1);
+    border: none;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+
+/* for mobile */
+@media only screen and (max-width: 991px) {
+    .service__list {
+        flex-direction: column;
+    }
+    .service__item {
+        text-align: center;
+    }
+}
+
+/* for tablet */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* for tablet horizontal and desktop */
+@media only screen and (min-width: 1200px) {
+
+}

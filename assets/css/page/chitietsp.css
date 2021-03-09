@@ -1,0 +1,60 @@
+@import "../component/comment-list.css";
+
+.iconstar {
+  padding-left: 12px;
+}
+.h4chitietsp {
+  margin-top: 0px;
+}
+.h1chitietsp {
+  font-size: 70px;
+  padding-left: 80px;
+}
+.h4chitietsp1 {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.item-horizontal1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.box-white2 {
+  background-color: var(--white1);
+  margin-top: -40px;
+  height: 55px;
+}
+.box-white3 {
+  background-color: var(--white1);
+  margin-top: -40px;
+  height: 320px;
+  
+}
+.menusp li a {
+  color: #373737;
+  width: 100%;
+  line-height: 40px;
+}
+.menusp ul {
+  list-style-type: none;
+  color: #373737;
+}
+.menusp {
+  padding: 0px;
+  text-align: center;
+}
+.ulsp {
+  overflow: hidden;
+  text-align: center;
+  margin-top: -20px;
+}
+.ulsp li {
+  float: left;
+  margin-right: 60px;
+}
+.pchitietsp {
+  margin-top: 10px;
+  font-weight: normal;
+}

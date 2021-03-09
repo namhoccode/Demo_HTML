@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quản lý dịch vụ</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet' href='assets/css/page/news.css'/>
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+</head>
+<body style="background: #FBFBFB">
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- ---------Menu--------- -->
+
+			<div class="col-md-2 card-backend" style="height: 1000px">
+				<div style="margin-bottom: 32px">
+					<img src="assets/images/logobackend.png" alt="#">
+				</div>
+				<div style="background: #ffffff">
+					<p style="margin: 4px 0px; padding: 12px; color:#373737">Thống kê</p>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlylichhen.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý lịch hẹn</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlydonhang.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý đơn hàng</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlynhanvien.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý nhân viên</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlykhachhang.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý khách hàng</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlydichvu.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;  ">Quản lý dịch vụ</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlybaiviet.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý bài viết</p></a>
+				</div>
+				<div style="background: #F2C94C">
+					<a href="Quanlydanhgia.html"><p style="margin: 4px 0px; padding: 12px; color:#373737; font-weight: bold;">Quản lý đánh giá</p></a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlysanpham.html"><p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý sản phẩm</p></a>
+				</div>
+			</div>
+
+
+			<div class="col-md-10">
+
+				<!-- --------Header-------- -->
+				<div>
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+						
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li style="padding: 20px 0px 0px 12px"><img src="img/noti.png" alt=""></li>
+								<li style="padding: 20px 20px 0px 12px" class="dropdown" >
+									<img src="img/down.png" style= "float: right ;" alt="">
+								<span style="float: right;padding-left: 0px;padding-right: 5px;margin-left: -40px;">Quang Ninh</span>
+								<span style="float: right; padding-top:20px; padding-right: 0px; color: gray;padding-left: 10px">Admin</span>
+									
+								
+
+									<img src="img/avatar.png" alt="">
+									<div class="dropdown-content">
+									
+										<div style="margin-top: 8px">
+											<a href=""><p>Thông tin các nhân</p></a>
+											<a href="#"><p>Đăng xuất</p></a>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+            </div>
+            <div class="card">
+				<div style="border-bottom: solid 1px #DDDDDD">
+					<p class="subtitle-22" style="margin-bottom: 20px">Quản lý đánh giá</p>
+				</div>
+				<div class="row" style="padding: 15px; ">
+					<div class="col-md-4" style="border: solid 1px #DDDDDD; border-radius: 8px">
+						<div style="border-bottom: solid 1px #DDDDDD">
+							<p class="subtitle-16" style="margin-top: 16px">Tên sản phẩm</p>
+						</div>
+						<div>
+							<div class="inp" style="margin: 12px 0px">
+
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tìm kiếm sản phẩm">
+							</div>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD">
+							<p style="background: #F9E4A6; padding: 16px 12px" >Gôm xịt tóc mềm Mugens Natural Hàn Quốc  </p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD; margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc</p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD; margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc </p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD; margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc </p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD; margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc </p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD;margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc </p>
+						</div>
+						<div style="border-bottom: solid 1px #DDDDDD; margin-top: 8px">
+							<p style="background: #FFFFFF; padding: 16px 12px" >Xả khô Welcos Confume dưỡng và tạo kiểu tóc 400ml Hàn Quốc </p>
+						</div>
+						
+					</div>
+					<div class="col-md-8" style="border: solid 1px #DDDDDD; border-radius: 8px;">
+						<div style="border-bottom: solid 1px #DDDDDD">
+							<p class="subtitle-16" style="margin-top: 16px">Đánh giá</p>
+						</div>
+						<div style="margin-top: 16px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Nguyễn Quang Ninh</p>
+								<div>
+									<img src="assets/images/icon/start1.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Sản phẩm ok mùi thơm dễ chịu</p>
+								</div>
+							</div>
+
+						</div>
+						<div style="margin-top: 32px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Bùi Tiến Anh</p>
+								<div>
+									<img src="assets/images/icon/start1.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Chất lượng tốt, sản phẩm đẹp, đóng gói cẩn thận, đáng tiền, giao hàng nhanh. :D</p>
+								</div>
+							</div>
+
+						</div>
+						<div style="margin-top: 32px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Nguyễn Văn Nam</p>
+								<div>
+									<img src="assets/images/icon/start3.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Cứng mà sao kêu mềm vậy shop</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div style="margin-top: 32px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Nguyễn Văn Nam</p>
+								<div>
+									<img src="assets/images/icon/start3.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Cứng mà sao kêu mềm vậy shop</p>
+								</div>
+							</div>
+
+						</div>
+						<div style="margin-top: 32px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Bùi Tiến Anh</p>
+								<div>
+									<img src="assets/images/icon/start1.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Chất lượng tốt, sản phẩm đẹp, đóng gói cẩn thận, đáng tiền, giao hàng nhanh. :D</p>
+								</div>
+							</div>
+
+						</div>
+						<div style="margin-top: 32px">
+							<div class="col-md-1">
+								<img src="img/avatar-back.png" alt="" style="padding: 0">
+							</div>
+							<div class="col-md-11">
+								<p class="subtitle-14">Nguyễn Quang Ninh</p>
+								<div>
+									<img src="assets/images/icon/start1.png" style="float: left;">
+									<p style="color: #B2B2B2; padding-left: 110px;">3 ngày trước</p>
+								</div>
+								<div>
+									<p>Sản phẩm ok mùi thơm dễ chịu</p>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

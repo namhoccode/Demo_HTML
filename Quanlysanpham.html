@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quản lý nhân viên</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet' href='assets/css/page/news.css' />
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background: #FBFBFB">
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- ---------Menu--------- -->
+
+			<div class="col-md-2 card-backend" style="height: 1000px">
+				<div style="margin-bottom: 32px">
+					<img src="assets/images/logobackend.png" alt="#">
+				</div>
+				<div style="background: #ffffff">
+					<p style="margin: 4px 0px; padding: 12px; color:#373737">Thống kê</p>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlylichhen.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý lịch hẹn</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlydonhang.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý đơn hàng</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlynhanvien.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737; ">Quản lý nhân viên</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlykhachhang.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý khách hàng</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlydichvu.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý dịch vụ</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlybaiviet.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý bài viết</p>
+					</a>
+				</div>
+				<div style="background: #FFFFFF">
+					<a href="Quanlydanhgia.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737;">Quản lý đánh giá</p>
+					</a>
+				</div>
+				<div style="background: #F2C94C">
+					<a href="Quanlysanpham.html">
+						<p style="margin: 4px 0px; padding: 12px; color:#373737; font-weight: bold;">Quản lý sản phẩm
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-10">
+
+				<!-- --------Header-------- -->
+				<div>
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse"
+									data-target=".navbar-ex1-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+
+								<ul class="nav navbar-nav navbar-right">
+									<li style="padding: 20px 0px 0px 12px"><img src="img/noti.png" alt=""></li>
+									<li style="padding: 20px 20px 0px 12px" class="dropdown">
+										<img src="img/down.png" style="float: right ;" alt="">
+										<span
+											style="float: right;padding-left: 0px;padding-right: 5px;margin-left: -40px;">Hoàng
+											Đức Nam</span>
+										<span
+											style="float: right; padding-top:20px; padding-right: 0px; color: gray;padding-left: 10px">Admin</span>
+
+
+
+										<img src="img/avatar.png" alt="">
+										<div class="dropdown-content">
+
+											<div style="margin-top: 8px">
+												<a href="">
+													<p>Thông tin các nhân</p>
+												</a>
+												<a href="#">
+													<p>Đăng xuất</p>
+												</a>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</nav>
+				</div>
+
+
+				<!-- ----------card-------- -->
+
+				<div class="card">
+					<div class="row" style="border-bottom: solid 1px #DDDDDD">
+						<div class="col-md-4">
+							<p class="subtitle-22" style="margin-bottom: 20px; color: #373737;">Quản lý nhân viên </p>
+						</div>
+						<div class="col-md-6"></div>
+						<div class="col-md-2">
+							<button type="button" class="btn btn-primary" style="width: 100%">Thêm nhân viên</button>
+						</div>
+					</div>
+
+					<div>
+						<div class="col-md-1" style="padding: 0">
+							<img src="img/delete-backend.png" alt="" style="margin: 12px 0px;">
+						</div>
+						<div class="col-md-8">
+
+						</div>
+						<div class="col-md-3" style="padding: 0">
+							<div class="inp" style="margin: 12px 0px">
+								<!-- <i class="ic_calendar"></i> -->
+								<input type="text" class="form-control" id="exampleInputEmail1"
+									placeholder="Tìm kiếm nhân viên">
+								<i class="glyphicon glyphicon-search"
+									style="position: absolute;right: 15px;top: 23px; color:#373737;"></i>
+							</div>
+						</div>
+					</div>
+					<div>
+						<table class="table table-striped">
+							<tr style="border: none;">
+								<th style="border: none; background: #F9E4A6"><input type="checkbox"
+										class="form-check-input" id="exampleCheck1"></th>
+								<th style="border: none; background: #F9E4A6">STT</th>
+								<th style="border: none; background: #F9E4A6">Mã sản phẩm</th>
+								<th style="border: none; background: #F9E4A6">Tên sản phẩm</th>
+								<th style="border: none; background: #F9E4A6">Số lượng</th>
+								<th style="border: none; background: #F9E4A6">Giá bán</th>
+								<th style="border: none; background: #F9E4A6">Danh mục</th>
+								<th style="border: none; background: #F9E4A6">Thương hiệu</th>
+								<th style="border: none; background: #F9E4A6">Xuất xứ</th>
+								<th style="border: none; background: #F9E4A6">Thao tác</th>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none;"><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none;">1</td>
+								<td style="border: none;">SP01</td>
+								<td style="border: none;">Gôm xịt tóc mềm Mugens</td>
+								<td style="border: none;">100</td>
+								<td style="border: none;">180.000đ</td>
+								<td style="border: none;">Chăm sóc tóc</td>
+								<td style="border: none;">Mugens Natural</td>
+								<td style="border: none;">Việt Nam</td>
+
+								<td style="border: none;">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none; "><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none; ">2</td>
+								<td style="border: none;">SP02</td>
+								<td style="border: none;">Gôm xịt tóc mềm Mugens</td>
+								<td style="border: none;">150</td>
+								<td style="border: none;">360.000đ</td>
+								<td style="border: none;">Tạo kiểu tóc</td>
+								<td style="border: none;">Lacei</td>
+								<td style="border: none;">Nhật Bản</td>
+
+								<td style="border: none; ">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none;"><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none;">3</td>
+								<td style="border: none;">SP03</td>
+								<td style="border: none;">Dưỡng tóc Misen Scenne</td>
+								<td style="border: none;">59</td>
+								<td style="border: none;">200.000đ</td>
+								<td style="border: none;">Chăm sóc da</td>
+								<td style="border: none;">Confume</td>
+								<td style="border: none;">Hàn Quốc</td>
+								<td style="border: none;">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none; "><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none; ">4</td>
+								<td style="border: none;">SP04</td>
+								<td style="border: none;">Dầu gội S-White</td>
+								<td style="border: none;">40</td>
+								<td style="border: none;">180.000đ</td>
+								<td style="border: none;">Chăm sóc tóc</td>
+								<td style="border: none;">S-White</td>
+								<td style="border: none;">Thái Lan</td>
+								<td style="border: none; ">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none;"><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none;">5</td>
+								<td style="border: none;">SP05</td>
+								<td style="border: none;">Gôm xịt tóc mềm Mugens</td>
+								<td style="border: none;">100</td>
+								<td style="border: none;">180.000đ</td>
+								<td style="border: none;">Chăm sóc tóc</td>
+								<td style="border: none;">Mugens Natural</td>
+								<td style="border: none;">Việt Nam</td>
+								<td style="border: none;">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none; "><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none; ">6</td>
+								<td style="border: none;">SP06</td>
+								<td style="border: none;">Gôm xịt tóc mềm Mugens</td>
+								<td style="border: none;">100</td>
+								<td style="border: none;">180.000đ</td>
+								<td style="border: none;">Chăm sóc tóc</td>
+								<td style="border: none;">Mugens Natural</td>
+								<td style="border: none;">Việt Nam</td>
+								<td style="border: none; ">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none;"><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none;">7</td>
+								<td style="border: none;">SP07</td>
+								<td style="border: none;">Gôm xịt tóc mềm Mugens</td>
+								<td style="border: none;">100</td>
+								<td style="border: none;">180.000đ</td>
+								<td style="border: none;">Chăm sóc tóc</td>
+								<td style="border: none;">Mugens Natural</td>
+								<td style="border: none;">Việt Nam</td>
+								<td style="border: none;">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+							<tr style="border: none;">
+								<td style="border: none;"><input type="checkbox" class="form-check-input"
+										id="exampleCheck1"></td>
+								<td style="border: none;">8</td>
+								<td style="border: none;">SP08</td>
+								<td style="border: none;">Dưỡng tóc Misen Scenne</td>
+								<td style="border: none;">59</td>
+								<td style="border: none;">200.000đ</td>
+								<td style="border: none;">Chăm sóc da</td>
+								<td style="border: none;">Confume</td>
+								<td style="border: none;">Hàn Quốc</td>
+								<td style="border: none; ">
+									<img src="img/edit-backend.png" alt="" style="float: left; margin-right: 8px">
+									<img src="img/delete-backend-tb.png" alt="">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+			<div class="text-center">
+				<ul class="pagination pagination-custom" style="padding-left: 1365px;">
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							<span class="sr-only">Next</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

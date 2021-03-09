@@ -1,0 +1,16 @@
+.list-rating-percen {
+}
+.list-rating-percen .rating-percen-item {
+}
+.rating-percen-item {
+  display: flex;
+  align-items: center;
+}
+
+.rating-percen-item .progress {
+  margin-right: 7.5px;
+  flex: 7;
+}
+.rating-percen-item .rating-wrapper {
+  margin-left: 7.5px;
+}

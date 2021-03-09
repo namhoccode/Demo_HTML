@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel='stylesheet' href='assets/css/common.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/page/home.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <style>
+        .modal-day {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .modal-button
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-avatar-area,.modal-info-customer
+        {
+            padding:25px !important;
+        }
+        .modal11>.row-footer {
+            margin-left: 50px !important;
+        }
+
+        .modal-day-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal11>.row-title {
+            padding-bottom: 5px !important;
+        }
+
+        .modal-day-item {
+            margin: 5px !important;
+            border-radius: 4px;
+        }
+
+        .item-1::first-line {
+            color: #FF2828;
+        }
+
+        .item-2::first-line {
+            color: #36B37E;
+        }
+
+        .item-1 {
+            border: 1px solid #FF2828;
+        }
+
+        .item-2 {
+            border: 1px solid #36b37e;
+        }
+        input
+        {
+            border-radius: 4px;
+            padding:10px 4px  !important;
+        }
+
+        .day-title {
+            padding: 5px !important;
+            background: #b2b2b2;
+            border:1px solid black;
+            border-radius :4px 4px 0px 0px;
+        }
+
+        .day-item:hover .day-title {
+            background: #373737 !important;
+            color:white;
+        }
+
+        .row>.modal-label,
+        .row>input {
+            margin: 10px 0px !important;
+        }
+
+        .modal-label {
+            text-align: left !important;
+            font-weight: 500;
+        }
+
+        .item-3 {
+            background: #36B37E;
+        }
+
+        .day-slot {
+            padding: 5px !important;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border:1px solid black;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .stylist-menu {
+            margin: 0px 15px !important;
+        }
+        .modal11-header
+        {
+            padding-top:20px !important;
+        }
+        @media all and (min-width: 1100px) {
+
+            .item-1,
+            .item-2,
+            .item-3 {
+                width: 15% !important;
+            }
+
+            .d-flex {
+                margin-left: 15px !important;
+            }
+
+
+            .modal11>.container-fluent {
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .modal-footer {
+                width: 90% !important;
+                margin: 10px 5% !important;
+                border:none;
+            }
+
+            
+            
+        }
+        .modal-footer>textarea
+        {
+            border:1px solid grey !important;
+            outline: 1px solid black !important;
+        }
+    </style>
+</head>
+<!-- 	-----------------header--------------- -->
+
+<body class="black">
+
+    <!-- header custom -->
+    <div style="background: #373737;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 no-pading">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="disabled"><a style="color: #fff;" href="#">Hỗ trợ ( Từ 8h00 đến
+                                21h00)</a></li>
+                        <li class="pull-right" style="display: flex;"><span style="color: #fff;padding: 10px;"><a
+                                    href="dangnhap.html">Đăng nhập</a></span><span
+                                style="height: 25px;width: 1px;background: #fff;margin-top: 10px;">
+                            </span><span style="color: #fff;padding: 10px;"> <a href="dangky.html">Đăng ký</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:white;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 no-pading">
+                    <nav class="navbar navbar-default" style="padding: 10px 0px;margin-bottom: 0px;">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a style="padding: 5px 20px 5px 15px;" class="navbar-brand" href="#"><img
+                                        style="width:150px" src="assets/images/logo.png"></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav demo ">
+                                    <li class="active " style="color: #373737;"><a href="index.html"
+                                            style="background-color: #fff;">Trang chủ <span
+                                                class="sr-only">(current)</span></a></li>
+                                    <li><a href="sanpham.html">Sản Phẩm</a></li>
+                                    <li><a href="dichvu.html">Dịch vụ</a></li>
+                                    <li><a href="Tintuc.html">Tin tức</a></li>
+                                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                                    <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <form class="navbar-form navbar-left">
+
+                                            <div class="form-group" style="position: relative;">
+                                                <input type="text" class="form-control" placeholder="Search">
+
+                                                <i class="glyphicon glyphicon-search"
+                                                    style="position: absolute;right: 8px;top: 10px;"></i>
+
+                                            </div>
+                                            <a href="timkiem.html"></a>
+                                        </form>
+                                    </li>
+                                    <li style="display: flex">
+                                        <a href="#"><i class="glyphicon glyphicon-calendar"></i></a>
+                                        <span style="height: 25px;width: 1px;background: #888;margin-top: 10px;"></span>
+                                        <a href="#"><i class="glyphicon glyphicon-heart"></i></a>
+                                        <span style="height: 25px;width: 1px;background: #888;margin-top: 10px;"></span>
+                                        <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 	-----------------banner--------------- -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-xs-12 col-md-12 no-pading fix-anh">
+                <img src="assets/images/banner.jpg" class="res_anh">
+            </div>
+            <div style="margin-top:50px;background: #373737;border-radius: 5px"
+                class="col-xs-12 col-xs-6 col-md-6 login container">
+                <form>
+                    <div class="form-group ">
+                        <div class="inp">
+                            <!-- <i class="ic_calendar"></i> -->
+                            <select class="form-control">
+                                <option>Vui lòng chọn salon</option>
+                                <option>183 Tiền Trung, Ái Quốc, Hải Dương</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="no-pading">
+                        <div class="col-xs-12 col-sm-4 col-md-4 no-pading" style="padding-left: 0">
+                            <select class="form-control">
+                                <option>Chọn giới tính</option>
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 no-pading" style="padding: 0px 0px 0px 12px">
+                            <select class="form-control">
+                                <option>Chọn Stylist</option>
+                                <option>Nguyễn Quốc Tuấn</option>
+                                <option>Đoàn Minh Ngọc</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 no-pading" style="padding: 0px 0px 0px 12px">
+                            <select class="form-control">
+                                <option>Chọn dịch vụ</option>
+                                <option>Cắt tóc nam</option>
+                                <option>Uốn - Ép - Nhuộm tóc nam</option>
+                                <option>Cắt tóc nữ</option>
+                                <option>Hấp, phục hồi bảo vệ, tái tạo tóc</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <!-- <i class="ic_calendar"></i> -->
+                        <button type="button" class="btn btn-yellow btn-large mt-15 btn-info btn-lg" data-toggle="modal"
+                            data-target="#myModal">Đặt lịch</button>
+
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal11 modal11-header">
+                                        <div class="row modal-row-title">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h1 class="modal-title">ĐẶT LỊCH SALON</h1>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid container-modal">
+                                            <div class="row">
+                                                <div class="col-lg-12 modal-label">
+                                                    <h5>Quý khách vui lòng</h5>
+                                                    <input class="col-lg-12" type="number"
+                                                        placeholder="Số điện thoại (một số đặt cho 1 người)">
+                                                </div>
+                                                <div class="col-lg-12 modal-label">
+                                                    <h5> Quý khách vui lòng nhập họ tên</h3>
+                                                        <input type="text" class="col-lg-12" placeholder="Họ tên">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 modal-label">
+                                                    <h5> Thời gian đặt lịch</h5>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-4 day-item">
+                                                    <div class="col-lg-12 day-title">
+                                                        Hôm nay
+                                                    </div>
+                                                    <div class="col-lg-12 day-slot">
+                                                        <h3>THỨ 7</h3>
+                                                        28/11/2020
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 day-item">
+                                                    <div class="col-lg-12 day-title">
+                                                        Ngày mai
+                                                    </div>
+                                                    <div class="col-lg-12 day-slot">
+                                                        <h3>CHỦ NHẬT</h3>
+                                                        29/11/2020
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 day-item">
+                                                    <div class="col-lg-12 day-title">
+                                                        Ngày kia
+                                                    </div>
+                                                    <div class="col-lg-12 day-slot">
+                                                        <h3>THỨ 2</h3>
+                                                        30/11/2020
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 modal-label">
+                                                    Chọn Stylist (Không bắt buộc):
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="stylist-menu">
+                                                    <select class="form-control">
+                                                        <option>Đoàn Phạm</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="row modal-avatar">
+                                                <div class="col-lg-2 modal-avatar-area">
+
+                                                    <img src="../demo/img/avatar-popup-index.png" width="127" height="150">
+                                                </div>
+                                                <div class="col-lg-10 modal-info-customer" style="text-align: left;">
+                                                    Tên stylist:<strong> Đoàn phạm</strong>
+                                                    <br>Chức danh : STYLIST
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 modal-label">
+                                                    Chọn khung giờ bắt đầu phục vụ
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex bd-highlight">
+                                                <div class="col-lg-2 modal-day-item item-1 p-2 flex-fill bd-highlight">
+                                                    09:00
+                                                    <br>
+                                                    Hết chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    09:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-3 p-2 flex-fill bd-highlight">
+                                                    10:00
+                                                    <br>
+                                                    Đã chọn
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-1 p-2 flex-fill bd-highlight">
+                                                    10:30
+                                                    <br>
+                                                    Hết chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-1 p-2 flex-fill bd-highlight">
+                                                    11:00
+                                                    <br>
+                                                    Hết chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    11:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    12:00
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    12:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    13:00
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    13:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    14:00
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    14:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    15:00
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    15:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-1 p-2 flex-fill bd-highlight">
+                                                    16:00
+                                                    <br>
+                                                    Hết chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    16:30
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-2 p-2 flex-fill bd-highlight">
+                                                    17:00
+                                                    <br>
+                                                    Còn chỗ
+                                                </div>
+                                                <div class="col-lg-2 modal-day-item item-1 p-2 flex-fill bd-highlight">
+                                                    17:30
+                                                    <br>
+                                                    Hết chỗ
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal11 modal11-footer">
+                                            <div class="conatiner-fluent">
+                                                <div class="row">
+                                                    <textarea placeholder="ghi chú" class="modal-footer" style="text-align: left;border: 1px solid black !important;">
+
+                                                    </textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-footer modal-button">
+                                                        <button type="button" class="btn  btn-yellow"
+                                                            data-dismiss="modal">Xác
+                                                            nhận
+                                                            đặt lịch</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- end header custom -->
+
+
+
+    <!-- 	-----------------body--------------- -->
+
+    <div id="product_home">
+        <div class="container">
+            <h2 class="title-supper text-center pt-45 mw-83">
+                CHÀO MỪNG ĐẾN VỚI <span class="txt-yellow">HAIR SALON ROYAL ĐOÀN</span> NƠI MÀ MỖI KHÁCH HÀNG ĐỀU <span
+                    class="txt-yellow">MUỐN ĐẾN</span> VÀ <span class="txt-yellow">CẢM NHẬN</span>
+            </h2>
+            <div class="text-center">
+                <img src="assets/images/icon/iconcut.png" alt="" class="img icon-title">
+            </div>
+            <div class="qoute pt-40 pb-40">
+                “Với vai trò là chuyên gia tạo mẫu tóc và chăm sóc tóc Salon Royal Đoàn sẽ giúp bạn trở nên đẹp hơn với
+                vẻ đẹp cá tính riêng, bạn sẽ đủ <p style="text-align: center;">tự tin làm những gì mình muốn.”</p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services__inner">
+                <h2 class="title-supper txt-white text-center mb-40">
+                    CÁC DỊCH VỤ CỦA HAIR <span class="txt-yellow">SALON ROYAL ĐOÀN</span>
+                </h2>
+                <div class="service__list mt-40">
+                    <div class="service__item">
+                        <a href="">
+                            <img src="assets/images/cat-toc-nam.jpg" alt="cat toc nam" class="img">
+                            <p class="text-center">CẮT TÓC NAM</p>
+                            <hr color="#F2C94C">
+                        </a>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <img src="assets/images/cat-toc-nu.jpg" alt="cat toc nam" class="img">
+                            <p class="text-center">CẮT TÓC NỮ</p>
+                            <hr color="#F2C94C">
+                        </a>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <img src="assets/images/uon.jpg" alt="cat toc nam" class="img">
+                            <p class="text-center">UỐN</p>
+                            <hr color="#F2C94C">
+                        </a>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <img src="assets/images/nhuom.jpg" alt="cat toc nam" class="img">
+                            <p class="text-center">NHUỘM</p>
+                            <hr color="#F2C94C">
+                        </a>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <img src="assets/images/ep-duoi.jpg" alt="cat toc nam" class="img">
+                            <p class="text-center">ÉP - DUỖI</p>
+                            <hr color="#F2C94C">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-yellow btn-medium">XEM THÊM</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="titleHome">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <h3 class="title-primary">SẢN PHẨM NỔI BẬT</h3>
+                    </div>
+                    <div class="col col-lg-4 hidden-xs">
+                        <div class="see-more mt-1">
+                            <a href="#" class="see-more__link">XEM THÊM <span class="circle-border"><i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titleHome">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <h3 class="title-primary">SẢN PHẨM KHUYẾN MẠI</h3>
+                    </div>
+                    <div class="col col-lg-4 hidden-xs">
+                        <div class="see-more mt-1">
+                            <a href="#" class="see-more__link">XEM THÊM <span class="circle-border"><i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="productDetail">
+                        <div class="imageProduct">
+                            <img src="assets/images/a4-27122018023955.jpg">
+                        </div>
+                        <div class="titleProduct">
+                            <p>Dầu Gội S-White Nhân Sâm Đào cho tóc suôn dài, mượt mà</p>
+                        </div>
+                        <div class="priceProduct">
+                            <p><span class="priceP">200.000đ</span> <span class="priceSale">180.000đ</span></p>
+                        </div>
+                        <div class="starProduct">
+                            <div class="leftStar">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(12)</span>
+                                </span>
+                            </div>
+                            <div class="rightStar">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="bookingProduct">
+                            <a href="#"> Mua Hàng</a>
+                        </div>
+                        <div class="salePercent">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="titleHome">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <h3 class="title-primary">XU HƯỚNG VÀ PHONG CÁCH TÓC</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapp-banner">
+            <img src="assets/images/banner2.jpg" alt="xu hướng và phong cách" class="img" />
+        </div>
+
+        <div class="container">
+            <div class="titleHome">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <h3 class="title-primary">XU HƯỚNG VÀ PHONG CÁCH TÓC</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="list-item-horizontal">
+                <div class="item-horizontal">
+                    <div class="item-horizontal__img">
+                        <img src="assets/images/anhtintuc1.jpg" alt="" class="img">
+                    </div>
+                    <div class="item-horizontal__content">
+                        <h4 class="title-block">
+                            Những màu nhuộm tóc ngắn đẹp 2020 các bạn nữ không thể bỏ qua
+                        </h4>
+                        <p class="time">
+                            05/10/2020
+                        </p>
+                        <div class="desc">
+                            <p>
+                                Các kiểu tóc ngắn vốn dĩ đã rất cá tính, năng động nhưng nếu chọn lựa được màu nhuộm
+                                thích hợp thì vẻ ngoài của bạn còn nổi bật và thời thượng hơn nữa. Hair Salon Royal Đoàn
+                                đã tổng hợp ra những màu nhuộm tóc ngắn đẹp 2020 các bạn nữ không thể bỏ qua. Ở đây có
+                                đầy đủ màu nhuộm từ đơn giản, nữ tính cho đến...
+                            </p>
+                        </div>
+                        <div class="mt-1">
+                            <a href="#" class="see-more__link">XEM THÊM <span class="circle-border "><i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-horizontal">
+                    <div class="item-horizontal__img">
+                        <img src="assets/images/anhtintuc2.jpg" alt="" class="img">
+                    </div>
+                    <div class="item-horizontal__content">
+                        <h4 class="title-block">
+                            BTS 12 kiểu tóc bob tuyệt đẹp phù hợp cho mọi cô gái
+                        </h4>
+                        <p class="time">
+                            05/10/2020
+                        </p>
+                        <div class="desc">
+                            <p>
+                                Các kiểu tóc ngắn vốn dĩ đã rất cá tính, năng động nhưng nếu chọn lựa được màu nhuộm
+                                thích hợp thì vẻ ngoài của bạn còn nổi bật và thời thượng hơn nữa. Hair Salon Royal Đoàn
+                                đã tổng hợp ra những màu nhuộm tóc ngắn đẹp 2020 các bạn nữ không thể bỏ qua. Ở đây có
+                                đầy đủ màu nhuộm từ đơn giản, nữ tính cho đến...
+                            </p>
+                        </div>
+                        <div class="mt-1">
+                            <a href="#" class="see-more__link">XEM THÊM <span class="circle-border ml-1"><i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-horizontal">
+                    <div class="item-horizontal__img">
+                        <img src="assets/images/anhtintuc3.jpg" alt="" class="img">
+                    </div>
+                    <div class="item-horizontal__content">
+                        <h4 class="title-block">
+                            Các kiểu tóc nam đẹp và hot nhất trong năm 2020 cho mọi chàng trai
+                        </h4>
+                        <p class="time">
+                            05/10/2020
+                        </p>
+                        <div class="desc">
+                            <p>
+                                Các kiểu tóc ngắn vốn dĩ đã rất cá tính, năng động nhưng nếu chọn lựa được màu nhuộm
+                                thích hợp thì vẻ ngoài của bạn còn nổi bật và thời thượng hơn nữa. Hair Salon Royal Đoàn
+                                đã tổng hợp ra những màu nhuộm tóc ngắn đẹp 2020 các bạn nữ không thể bỏ qua. Ở đây có
+                                đầy đủ màu nhuộm từ đơn giản, nữ tính cho đến...
+                            </p>
+                        </div>
+                        <div class=" mt-1">
+                            <a href="#" class="see-more__link">XEM THÊM <span class="circle-border"><i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+    <!-- 	-----------------footer--------------- -->
+
+    <div class="container-fluid shadow-up"
+        style=" margin-top: 60px; padding-top: 60px; background-color: #373737; color: white;">
+        <div>
+            <div class="container" style="padding-bottom: 30px;">
+                <div class="row" style="padding-top: 30px;">
+                    <div class="col-xs-12 col-md-8" style="padding-top: 30px;">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div>
+                                    <img src="assets/images/logofooter.png" alt="">
+                                </div>
+                                <div style="margin-top: 20px">
+                                    <p style="margin-bottom: 8px">Hair Salon Royal Đoàn</p>
+                                    <p>Số nhà 183 - Đường Tiền Trung - Phường Ái Quốc - TP. Hải Dương</p>
+                                    <p>0902.087.097</p>
+                                    <p>hairsalonroyaldoan@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div>
+                                    <p class="black-2 body-22" style="color: white;">GIỜ LÀM VIỆC</p>
+                                </div>
+                                <div>
+                                    <p>Giờ làm việc từ 8h00 - 21h00 tất cả các ngày trong tuần
+                                        (trừ ngày lễ, ngày Tết).</p>
+
+                                </div>
+
+                                <div>
+                                    <br />
+                                    <p class="body-22 black-2" style="color: white;">ĐĂNG KÝ NHẬN TIN</p>
+                                </div>
+                                <div>
+                                    <p>Đăng ký email để cập nhật thông tin khuyễn mãi mới nhất</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-8 col-md-8">
+                                        <div class="inp">
+                                            <i class="ic_mail"></i>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                placeholder="Nhập địa chỉ email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-md-4">
+                                        <button type="submit" class="btn btn-yellow btn-full">Đăng ký</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-md-4" style="padding-top: 30px;">
+                        <div>
+                            <p class="body-22 black-2" style="color: white;">BẢN ĐỒ CỬA HÀNG</p>
+                        </div>
+                        <div>
+                            <img src="assets/images//bando.jpg" class="img" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

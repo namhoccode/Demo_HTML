@@ -1,0 +1,26 @@
+.comments {
+  border-top: 1px solid #b2b2b2;
+}
+.comment-item {
+  display: flex;
+  padding-top: 20px;
+  border-bottom: 1px solid #b2b2b2;
+}
+.comment-item .comment-picture {
+  flex-basis: 64px;
+  padding-right: 14px;
+}
+
+.comment-item .comment-picture img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.comment-info .user-name,
+.comment-info .comment-content {
+  font-size: 14px;
+  color: #373737;
+  font-weight: 400;
+  margin-bottom: 0;
+}

@@ -1,0 +1,155 @@
+.rating.no-cusor .inner > label {
+  cursor: default;
+  pointer-events: none;
+}
+.rating .inner {
+  display: inline-block;
+}
+.rating .inner:before,
+.rating .inner:after {
+  display: table;
+  content: "";
+}
+.rating .inner:after {
+  clear: both;
+}
+.rating .inner > input {
+  display: none;
+}
+.rating .inner > input ~ label {
+  margin-bottom: 0;
+}
+.rating .inner > input:checked ~ label,
+.rating .inner > input.checked ~ label {
+  color: #ffd700;
+}
+.rating .inner > input:checked ~ label:before,
+.rating .inner > input.checked ~ label:before {
+  content: "\e938";
+}
+.rating .inner > input:checked ~ label.star-half:before,
+.rating .inner > input.checked ~ label.star-half:before {
+  content: "\e91b";
+  opacity: 1;
+}
+.rating .inner > input:checked ~ label:hover,
+.rating .inner > input.checked ~ label:hover {
+  color: #ffed85;
+}
+.rating .inner > input:checked ~ label:hover ~ label,
+.rating .inner > input.checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+.rating .inner > input:checked + label:hover,
+.rating .inner > input.checked + label:hover {
+  color: #ffed85;
+}
+.rating .inner > label {
+  color: #c5c9d3;
+  float: right;
+  font-size: 15px;
+  cursor: pointer;
+}
+.rating .inner > label:before {
+  margin: 3px;
+  font-family: "icomoon";
+  display: inline-block;
+  content: "\e937";
+}
+.rating .inner > label:before > .star-half:before {
+  content: "\e91b";
+  opacity: 0;
+}
+.rating .inner > label:hover ~ input:checked ~ label {
+  color: #ffed85;
+}
+.rating .inner > .star-half:before {
+  content: "\e91b";
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+.rating .inner:not(:checked) > label:hover {
+  color: #ffd700;
+}
+.rating .inner:not(:checked) > label:hover:before {
+  content: "\e938";
+}
+.rating .inner:not(:checked) > label:hover.star-half:before {
+  content: "\e91b";
+  opacity: 1;
+}
+.rating .inner:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+}
+.rating .inner:not(:checked) > label:hover ~ label:before {
+  content: "\e938";
+}
+.rating .inner:not(:checked) > label:hover ~ label.star-half:before {
+  content: "\e91b";
+  opacity: 1;
+}
+.rating.rating-white .inner > input:checked ~ label,
+.rating.rating-white .inner > input.checked ~ label {
+  color: #fff;
+}
+.rating.rating-white .inner > input:checked ~ label:hover,
+.rating.rating-white .inner > input.checked ~ label:hover {
+  color: #c5c9d3;
+}
+.rating.rating-white .inner > input:checked ~ label:hover ~ label,
+.rating.rating-white .inner > input.checked ~ label:hover ~ label {
+  color: #c5c9d3;
+}
+.rating.rating-white .inner > input:checked + label:hover,
+.rating.rating-white .inner > input.checked + label:hover {
+  color: #c5c9d3;
+}
+.rating.rating-white .inner > label {
+  color: #fff;
+}
+.rating.rating-white .inner > label:hover ~ input:checked ~ label {
+  color: #c5c9d3;
+}
+.rating.rating-white .inner:not(:checked) > label:hover {
+  color: #fff;
+}
+.rating.rating-white .inner:not(:checked) > label:hover ~ label {
+  color: #fff;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+}
+.rating-wrapper.rating-vertical {
+  flex-direction: column;
+}
+
+.rating-number {
+  font-size: 16px;
+  color: #373737;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.rating-number-percen {
+  font-size: 14px;
+  color: #373737;
+  margin-left: 5px;
+}
+.rating-number-vertical {
+  font-size: 60px;
+  font-weight: 700;
+  color: #373737;
+}
+
+.rating-desc {
+  font-size: 14px;
+  color: #373737;
+}
+
+.rating-time {
+  font-size: 12px;
+  color: #b2b2b2;
+  margin-left: 10px;
+}

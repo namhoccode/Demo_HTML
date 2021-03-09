@@ -1,0 +1,300 @@
+@import "./variables.css";
+@import "./font-icon.css";
+@import "./component/rating.css";
+@import "./component/progress.css";
+@import "./component/list-rating-percen.css";
+
+.title-primary,
+.title-block {
+  font-size: 22px;
+  color: var(--grey1);
+}
+.title-supper {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--grey1);
+}
+.title-small {
+  font-size: 14px;
+  color: var(--grey1);
+  line-height: 22px;
+}
+
+a {
+  cursor: pointer;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.a1 {
+  cursor: pointer;
+  color: #fff;
+  margin-right: 2px;
+  padding: 5px;
+}
+.a1 :hover {
+  color: #f2c94c;
+}
+
+.link-redirect {
+  color: var(--grey1);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.link-redirect:hover {
+  text-decoration: underline;
+  color: var(--yellow1);
+}
+
+.time {
+  font-size: 16px;
+  color: var(--grey1);
+  line-height: 24px;
+}
+body {
+  background-color: var(--gray2);
+  font-family: "Roboto", sans-serif;
+}
+.circle-border {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--grey1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-more {
+  text-align: right;
+}
+.see-more__link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #373737;
+  font-weight: 700;
+}
+.see-more__link1 {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #373737;
+  font-weight: 700;
+  margin-left: -505px;
+}
+
+.see-more__link .circle-border {
+  margin-left: 5px;
+}
+.see-more__link1 .circle-border {
+  margin-left: 5px;
+}
+.desc p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.img {
+  max-width: 100%;
+}
+.imgtt {
+  width: 245px;
+  height: 185px;
+}
+
+.txt-yellow {
+  color: var(--yellow1);
+}
+.txt-white {
+  color: var(--white);
+}
+.mw-83 {
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.qoute {
+  max-width: 970px;
+  margin: 0 auto;
+}
+/* spacing */
+.no-pading {
+  padding: 0;
+}
+
+.no-magin {
+  margin: 0;
+}
+
+.pt-45 {
+  padding-top: 45px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.my-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pd-15 {
+  padding: 15px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* button style */
+.button {
+  width: 180px;
+  height: 40px;
+}
+
+.btn-search {
+  background-color: "red";
+}
+.btn-yellow {
+  background-color: var(--yellow1);
+  color: #373737;
+  border: 2px solid var(--yellow1);
+  transition: all 0.3s;
+}
+
+.btn-yellow:hover {
+  background-color: transparent;
+  color: var(--yellow1);
+}
+
+.btn-full {
+  width: 100%;
+}
+.btn-large {
+  width: 230px;
+}
+
+.btn-medium {
+  width: 180px;
+}
+
+.btn-small {
+  width: 150px;
+}
+.btn-xsmall {
+  width: 103px;
+}
+
+button:active {
+  background-color: #e60404;
+}
+
+.btn-default {
+  border-color: #f2c94c;
+  color: #f2c94c;
+  width: 120px;
+}
+
+.box {
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px 0px #373737 12%;
+}
+
+.box-white {
+  background-color: var(--white1);
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.box-white1 {
+  background-color: var(--white1);
+  height: 60px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+.box-white4 {
+  background-color: var(--white1);
+  
+  margin-top: 20px;
+}
+
+/* for mobile */
+@media only screen and (max-width: 991px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .pt-40 {
+    padding-top: 30px;
+  }
+  .pb-40 {
+    padding-bottom: 30px;
+  }
+}
+
+/* for tablet */
+@media only screen and (min-width: 992px) {
+  .pt-40 {
+    padding-top: 40px;
+  }
+  .pb-40 {
+    padding-bottom: 40px;
+  }
+}
+
+/* for tablet horizontal and desktop */
+@media only screen and (min-width: 1200px) {
+}
+
+.bg {
+  background: url("../images/anhnen.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+.nav navbar-nav .demo .active .a {
+  background-color: none;
+}
+.nav navbar-nav .demo .active .a:hover {
+  background-color: #f2c94c;
+}
+.ul .li .a {
+  background-color: #f2c94c;
+}
+
+.pagination-custom .page-item {
+}
+
+.pagination-custom.pagination > li:first-child > a {
+  border-radius: 4px;
+}
+
+.pagination-custom.pagination > li > a {
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-left: 0;
+  color: var(--grey1);
+}
+
+.pagination-custom.pagination > li > a:hover {
+  background-color: var(--yellow1);
+  color: var(--white1);
+}

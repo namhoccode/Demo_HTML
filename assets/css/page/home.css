@@ -1,0 +1,13 @@
+@import "../component/productdetail.css"; 
+@import "../component/item-horizontal.css"; 
+@import "../component/services.css";
+
+
+#product_home{
+	width: 100%;
+    float: left;
+    background-color: #F4F4F4;
+    padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+

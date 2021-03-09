@@ -1,0 +1,42 @@
+
+.category {
+    list-style: none;
+    padding: 0;
+}
+
+.category__item {
+    color: var(--grey1);
+}
+
+.category__item a {
+    transition: all .3s;
+    display: block;
+    color: inherit;
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.category__item a:hover {
+    background-color: var(--yellow1);
+    color: var(--white1);
+}
+.lb1{
+    font-weight: 400 !important;
+}
+.loctimkiem{
+   padding: 0px;
+}
+.loctimkiem ul{
+    list-style-type: none;
+    color: #373737;
+}
+.loctimkiem li a{
+    color: #373737;
+  float: left;
+  width: 150px;
+  height: 40px;
+  line-height: 0xp;
+ 
+ 
+}

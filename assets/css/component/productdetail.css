@@ -1,0 +1,90 @@
+.productDetail{
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.productDetail:hover {
+    transform: scale(1.1);
+}
+
+.imageProduct {
+	width:100%;
+	text-align: center;
+}
+.imageProduct img{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.titleProduct{
+	width: 100%;
+}
+.titleProduct p,.priceProduct,.starProduct {
+	padding: 0 10px;
+}
+.priceProduct .priceP{
+	text-decoration-line: line-through;
+}
+.priceProduct .priceSale{
+	color: red;
+	padding-left: 50px;
+}
+.leftStar i {
+	color: #F2C94C;
+}
+.leftStar{
+	width: 50%;
+	float: left;
+}
+.rightStar{
+	width: 50%;
+	float: right;
+}
+.starProduct{
+    width: 100%;
+    float: left;
+    line-height: 1px;
+}
+.leftStar {
+    width: 70%;
+    float: left;
+}
+.rightStar {
+    width: 30%;
+    float: left;
+}
+.rightStar i {
+	float: right;
+	padding-right: 10px;
+}
+.bookingProduct {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+.bookingProduct a{
+	color: #333;
+    padding: 5px 15px;
+    border: solid 2px;
+    border-radius: 6px;
+}
+.salePercent{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.salePercent span{
+	padding: 5px 5px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+}
+.titleHome{
+	width:100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
